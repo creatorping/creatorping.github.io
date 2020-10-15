@@ -1,8 +1,8 @@
 ---
 title:  Markdown 入门
 date: 2020.10.12 20:00:45 +0800
-categories: [language,Make]
-tags: [Markdown]
+categories: [编程语言,Markdown]
+tags: [编程语言]
 ---
 
 ## 编译器
