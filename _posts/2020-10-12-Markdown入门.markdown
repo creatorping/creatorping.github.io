@@ -1,0 +1,110 @@
+---
+title:  Markdown 入门
+date: 2020.10.12 20:00:45 +0800
+categories: [编程语言,Markdown]
+tags: [编程语言]
+---
+
+## 编译器
+### 在线编译器
+[cmd markdown 编译阅读器](https://www.zybuluo.com/mdeditor)
+
+### 本地编译器
+[iOS/macOS : Bear](https://www.apple.com.cn/search/Bear?src=serp)
+[Windows：Typora](https://www.typora.io/)
+
+## markdown语法
+### 一.对文字样式的编辑
+`**content**` 可以实现对字体的加粗，`*content*`实现斜体
+**示例: **
+
+> \*\*content\*\*
+> \*content\*
+
+**显示:**
+
+>**content**
+>*content*
+
+删除线`~~content~~`
+**示例：**
+
+> \~\~content\~\~
+
+**显示：**
+
+> ~~content~~
+
+### 二.对段落的编辑
+`+`实现列表，`#`实现标题，一个\#为一级标题，两个\#为二级标题，以此类推。`>`可将一段文字变成引用，或者不加任何字符，在段落前面加一段缩进，就会显示出代码块。
+`注意:标记字符和文字之间要有一个空格`
+**示例**
+> \> the effect of greater-than sign 
+
+> \+ part one
+> 	\+part two
+
+> \# Primary title
+> \#\# The secondary title
+> \#\#\# Level 3 title
+
+>	This part is the indentation effect
+
+**显示:**
+
+>  the effect of greater-than sign 
+
+> + part one
+> 	+ part two
+
+> # Primary title
+> ## The secondary title
+> ### Level 3 title
+
+	This part is the indentation effect
+
+
+对编程语言有直接支持，对相应的语法显示高亮。
+***示例***
+> \`\`\`c++
+> for(int i=1;i<=n;i++)
+> 	if(i==1) printf("odd\n");
+> 	else printf("even\n");
+> \`\`\`
+
+**显示:**
+
+> ```c++
+> for(int i=1;i<=n;i++)
+> 	if(i==1) printf("odd\n");
+> 	else printf("even\n");
+> ```
+
+支持在markdown中填写表格
+
+**示例：**
+
+> \| caption1 \| caption2 \|
+> \| -------- \| --------- \|
+> \| content1 \| conent2 \|
+> \| content1 \| conent2 \|
+
+**显示：**
+
+> | caption1 | caption2 |
+> | --------- | --------- |
+> | content1 | conent2 |
+> | content1 | conent2 |
+
+### 三.插入文章其他元素
+`[]()`插入连接,`![]()`插入图片（可以是本地图片或者网络图片）.
+**示例**
+
+> \[百度搜索]\(https://www.baidu.com)
+> \!\[]\(https://cdn.sspai.com/attachment/origin/2016/10/20/351403.jpg)
+
+**显示**
+
+> [百度搜索](https://www.baidu.com)
+> ![](https://cdn.sspai.com/attachment/origin/2016/10/20/351403.jpg)
+

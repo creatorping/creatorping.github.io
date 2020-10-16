@@ -1,11 +1,10 @@
 ---
-title:GitHub搭建个人博客
-date:2020-10-15 19:12:00 +0800
-categories:[搭建杂七杂八]
-tags[搭建杂七杂八]
+title: GitHub搭建个人博客
+date: 2020-10-15 19:12:00 +0800
+categories: [搭建杂七杂八]
+tags: [搭建杂七杂八]
 ---
 
-# GitHub搭建个人博客
 ## 一.如何搭建静态个人博客
 ### 1.1前提条件
 + 拥有GitHub账号
