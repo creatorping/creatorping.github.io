@@ -13,18 +13,18 @@ tags: [搭建杂七杂八]
 
 ### 1.2创建仓库
 
-![image-20201015180014758]( typora-user-images\image-20201015180014758.png)
+![image-20201015180014758](C:\Users\creator\AppData\Roaming\Typora\typora-user-images\image-20201015180014758.png)
 + 仓库名必须要和自己的GitHub用户名相同
-![image-20201015180343391]( typora-user-images\image-20201015180343391.png)
+![image-20201015180343391](C:\Users\creator\AppData\Roaming\Typora\typora-user-images\image-20201015180343391.png)
 
 
 
 ## 2.配置SSH KEY
 + 按以下步骤点击github，创建SSH
 
-![image-20201015180659612]( typora-user-images\image-20201015180659612.png)
+![image-20201015180659612](C:\Users\creator\AppData\Roaming\Typora\typora-user-images\image-20201015180659612.png)
 
-![image-20201015181254664]( typora-user-images\image-20201015181254664.png)
+![image-20201015181254664](C:\Users\creator\AppData\Roaming\Typora\typora-user-images\image-20201015181254664.png)
 
 + 错误提示：Key is invalid. You must supply a key in OpenSSH public key format 的解决方法
 	+ 1.打开cmd
@@ -61,9 +61,9 @@ tags: [搭建杂七杂八]
 
 ## 4.配置Github Pages
 + 第一步点击仓库中的Settings
-![image-20201015183816441]( typora-user-images\image-20201015183816441.png)
+![image-20201015183816441](C:\Users\creator\AppData\Roaming\Typora\typora-user-images\image-20201015183816441.png)
 + 下滑找到GitHub Pages，按如下配置，然后save，然后GitHub Pages会提示一个网址，可通过此网址访问个人博客
-![image-20201015184355595]( typora-user-images\image-20201015184355595.png)
+![image-20201015184355595](C:\Users\creator\AppData\Roaming\Typora\typora-user-images\image-20201015184355595.png)
 
 ## 二.使用Jekyll打造博客
 + 1.到 [http://jekyllthemes.org/](http://jekyllthemes.org/) 找到自己喜欢的模板
