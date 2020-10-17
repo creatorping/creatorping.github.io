@@ -28,10 +28,12 @@ tags: [设计模式]
 
 注意事项：在行为受状态约束的时候使用状态模式，而且状态不超过 5 个。
 
+类图：
 
+![image-20201016203053551]( typora-user-images\image-20201016203053551.png)
 
 ## 实现
-+ 一家糖果公司想完成一个自动糖果售货机的设计，给出如下状态转换图，请求帮忙实现项目。![image-20201016200255438](C:\Users\creator\AppData\Roaming\Typora\typora-user-images\image-20201016200255438.png)
++ 一家糖果公司想完成一个自动糖果售货机的设计，给出如下状态转换图，请求帮忙实现项目。![image-20201016200255438]( typora-user-images\image-20201016200255438.png)
 + 五个状态，NoQuarter,HasQuarter,Sold,SoldOut,Winner分别代表未投币，已投币，售出，售空，赢家。继承自同一个接口State。当一个状态退出时会自动调整售货机为下一个状态。
 + State实现了四个方法insertQuarter(),ejectQuarter(),turnCrank(),dispense().分别代表投币，退币，转动曲柄，发放糖果。
 
