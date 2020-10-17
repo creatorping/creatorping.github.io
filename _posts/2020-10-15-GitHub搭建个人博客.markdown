@@ -13,7 +13,7 @@ tags: [搭建杂七杂八]
 
 ### 1.2创建仓库
 
-![image-20201015180014758](C:\Users\creator\AppData\Roaming\Typora\typora-user-images\image-20201015180014758.png)
+![image-20201015180014758](https://github.com/creatorping/creatorping.github.io/blob/master/assets/img/typora-user-images/image-20201013193825154.png)
 + 仓库名必须要和自己的GitHub用户名相同
 ![image-20201015180343391](C:\Users\creator\AppData\Roaming\Typora\typora-user-images\image-20201015180343391.png)
 
