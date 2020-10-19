@@ -1,0 +1,22 @@
+---
+title: PicGo的安装
+data: 2020-10-19 11:59:00 +0800
+categories: [搭建杂七杂八]
+tags: [搭建杂七杂八]
+---
+
+## 官网下载
++ https://github.com/Molunerfinn/PicGo
+## 图床设置
++ Settings-> Developer settings->Personal access tokens 创建一个新tokens
+
+  ![image-20201019114747092](https://raw.githubusercontent.com/creatorping/picBed/master/image-20201019114747092.png)
+
++ 复制个人访问令牌，将其粘贴到GitHub图床中，如下图所示![image-20201019115004904](https://raw.githubusercontent.com/creatorping/picBed/master/image-20201019115004904.png)
+
+  ![image-20201019115028231](https://raw.githubusercontent.com/creatorping/picBed/master/image-20201019115028231.png)
+
++ 创建一个新仓库，在图床中填入"用户名"/"仓库名"。分支一般直接填master。
+
+## Typora设置上传图片
++ 如果使用Typora写博客的话，可以在Typora中格式->图像->全局图像设置中设置PicGo的路径，这样Typora可以通过一键上传所有图片。![image-20201019115607297](https://raw.githubusercontent.com/creatorping/picBed/master/image-20201019115607297.png)
