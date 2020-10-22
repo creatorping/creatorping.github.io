@@ -1,0 +1,102 @@
+---
+title: atomic原子操作的使用
+data: 2020-10-21 11:59:00 +0800
+categories: [编程语言,C++从入门到放弃 ]
+tags: [C++从入门到放弃 ]
+---
+## atomic类的使用
+
+**头文件**
+
+> \#include<atomic>
+
+**示例**
+
+~~~c++
+#include <atomic>
+#include <iostream>
+#include <thread>
+using namespace std;
+atomic<int> N = 0;//原子变量
+void thread1()
+{
+	for (int i = 1; i <= 30000; i++) {
+		N++;
+	}
+}
+void thread2()
+{
+	for (int i = 1; i <= 30000; i++) {
+		N++;
+	}
+}
+int main() {
+	thread t1(thread1);
+	thread t2(thread2);
+	t1.join();
+	t2.join();
+	cout << N << endl;
+}
+~~~
+
+原子变量支持`++`和`--`操作
+
+## atomic_flag的使用
+
+atomic_flag 一种简单的原子布尔类型，只支持两种操作，test-and-set 和 clear。
+
+> test_and_set: 返回atomic_flag 变量的值，且将值设置为1
+>
+> clear：将atomic_flag 的值设为0
+
+ std::atomic_flag 只有默认构造函数，拷贝构造函数已被禁用，因此不能从其他的 std::atomic_flag 对象构造一个新的 std::atomic_flag 对象。
+
+​    如果在初始化时没有明确使用 ATOMIC_FLAG_INIT初始化，那么新创建的 std::atomic_flag 对象的状态是未指定的（unspecified）（既没有被 set 也没有被 clear。）另外，atomic_flag不能被拷贝，也不能 move 赋值。
+
+​    ATOMIC_FLAG_INIT: 如果某个 std::atomic_flag 对象使用该宏初始化，那么可以保证该 std::atomic_flag 对象在创建时处于 clear 状态。
+
+~~~c++
+#include <iostream>              
+#include <atomic>                
+#include <thread>                
+#include <vector>                
+using namespace std;
+
+atomic_flag flag = ATOMIC_FLAG_INIT;
+int cnt = 0;
+
+void cnt_add(int id)
+{
+	while (1)
+	{
+		while (flag.test_and_set())
+		{
+			this_thread::yield();//当前线程“放弃”执行，让操作系统调度另一线程继续执行
+		}
+
+		if (cnt >= 1000)
+		{
+			flag.clear();
+			break;
+		}
+		cout << ++cnt <<"thread# "<< id<< endl;
+		
+		flag.clear();
+	}
+	return ;
+}
+int main()
+{
+	thread T[15];
+	for (int i = 1; i <= 10; i++)
+	{
+		T[i] = thread(cnt_add,i);
+	}
+	for (int i = 1; i <= 10; i++)
+	{
+		T[i].join();
+	}
+	return 0;
+}
+~~~
+
