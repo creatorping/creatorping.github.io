@@ -5,6 +5,7 @@ categories: [编程语言,valgrind]
 tags: [valgrind]
 ---
 
+
 ## 安装
 
 >sudo apt  install valgrind

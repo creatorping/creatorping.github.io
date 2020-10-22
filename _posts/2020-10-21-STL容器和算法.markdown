@@ -4,6 +4,7 @@ data: 2020-10-21 10:59:00 +0800
 categories: [后端之路,C++面试基础]
 tags: [C++面试基础]
 ---
+
 ## <font color=Blue>说一下map和set有什么区别，分别又是怎么实现的？</font>
 
 map和set都是C++的关联容器，其底层实现都是红黑树（RB-Tree）。由于 map 和set所开放的各种操作接口，RB-tree 也都提供了，所以几乎所有的 map 和set的操作行为，都只是转调 RB-tree 的操作行为。

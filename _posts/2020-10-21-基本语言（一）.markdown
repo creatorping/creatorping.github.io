@@ -4,6 +4,7 @@ data: 2020-10-21 9:59:00 +0800
 categories: [后端之路,C++面试基础]
 tags: [C++面试基础]
 ---
+
 ## <font color=Blue>static关键字的作用</font>
 1.全局静态变量
 
