@@ -9,21 +9,21 @@ tags: [C++面试基础]
 
 ## c++
 
-### <font color=Blue>写个函数在main函数执行前先运行</font>
 
-~~~c++
-__attribute((constructor))void before()
-{
-    printf("before main\n");
-}
-~~~
 
-~~~c++
-static int _ = []{
-    cin.sync_with_stdio(false);
-    return 0;
-}();
-~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ### <font color=Blue>一个C++源文件从文本到可执行文件经历的过程？</font>
 
