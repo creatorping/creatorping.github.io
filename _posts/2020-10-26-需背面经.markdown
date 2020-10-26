@@ -15,14 +15,3 @@ linux默认最大文件句柄数是1024个，在linux服务器文件并发量比
 
 用ulimit -a查询Linux相关的参数
 
-2.对所有进程都有效的方法，修改Linux系统参数
-
->vi /etc/security/limits.conf 添加
-
-+ soft　　nofile　　65536
-
-+ hard　　nofile　　65536
-
-将最大句柄数改为65536
-
-修改以后保存，注销当前用户，重新登录，修改后的参数就生效了
